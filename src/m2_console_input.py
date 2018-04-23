@@ -2,9 +2,9 @@
 This module demonstrates lets you practice INPUT from the CONSOLE.
 
 Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
-
+         their colleagues and Todd Kuebelbeck.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
+import math
 
 def main():
     """ TESTs the functions in this module (by calling them). """
@@ -30,10 +30,12 @@ def double_a_float():
          -6.28
     """
     # ------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # DONE: 2. Implement and test this function.
     #   The testing code is already written for you (above).
     # ------------------------------------------------------------------
-
+    text = float(input('Give me a number!'))
+    doubled = text * 2
+    print('Your input doubled is: ', doubled)
 
 def print_an_integer_many_times():
     """
@@ -61,9 +63,12 @@ def print_an_integer_many_times():
          10
     """
     # ------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #   The testing code is already written for you (above).
     # ------------------------------------------------------------------
+    text = int(input('Give me a number!: '))
+    for k in range(text):
+        print(text * 2)
 
 
 def print_an_integer_many_times_on_one_row():
@@ -80,13 +85,18 @@ def print_an_integer_many_times_on_one_row():
          1010101010
     """
     # ------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     #   The testing code is already written for you (above).
     #
     # HINT: One way to print on a SINGLE line is to build up a string
     #       and then print that (single) string.
     # ------------------------------------------------------------------
-
+    text = int(input('Give me a number!: '))
+    string = ''
+    doubled = text * 2
+    for k in range(text):
+        string = string + str(doubled)
+    print(string)
 
 def input_it_all():
     """
@@ -120,10 +130,19 @@ def input_it_all():
          Peace & Love.
     """
     # ------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # DONE: 5. Implement and test this function.
     #   The testing code is already written for you (above).
     # ------------------------------------------------------------------
+    to_root = float(input('Give me a float to square root: '))
+    n = int(input('How many times do you want me to repeat? '))
+    string = input('Please give me a string ')
 
+    rooted = math.sqrt(to_root)
+
+    for k in range(n):
+        print(rooted)
+    for k in range(n):
+        print(string)
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
